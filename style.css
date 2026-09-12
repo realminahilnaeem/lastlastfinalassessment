@@ -1,0 +1,865 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: white;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    min-height: 90px;
+    height: auto;
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+main {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    height: 812px;
+    position: relative;
+    overflow: hidden;
+}
+
+.eligibility-section {
+    width: 100%;
+    min-height: 686px;
+    background-color: white;
+}
+
+.program-section {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+.check-eligibility {
+    width: 100%;
+}
+
+.faq-section {
+    width: 100%;
+    background-color: white;
+}
+
+.ranking-section {
+    width: 100%;
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    min-height: 250px;
+}
+
+.navbar {
+    min-height: 90px;
+    padding: 0;
+    position: relative;
+    z-index: 1000;
+}
+.navbar .container {
+    min-height: 90px;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-link {
+    font-size: 13px;
+    color: #333;
+    margin: 0 14px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #087b3e;
+}
+
+.login-btn {
+    background-color: #087b3e;
+    color: white;
+    min-width: 115px;
+    padding: 9px 28px;
+    font-size: 13px;
+    border-radius: 7px;
+}
+
+.login-btn:hover {
+    background-color: #066c36;
+    color: white;
+}
+
+.hero {
+    width: 100%;
+    height: 812px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("images/Banner background.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 128, 70, 0.75);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    color: white;
+    max-width: 900px;
+}
+
+.hero-label {
+    font-size: 13px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.hero-description {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: white;
+    color: #087b3e;
+    padding: 11px 38px;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.hero-btn:hover {
+    background-color: #f2f2f2;
+    color: #087b3e;
+}
+
+.eligibility-section {
+    padding: 70px 0;
+    background-color: white;
+}
+
+.eligibility-left h2 {
+    color: #14284f;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.small-title {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.criteria-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.criteria-list li {
+    position: relative;
+    padding-left: 17px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.criteria-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #21aa77;
+    font-weight: bold;
+}
+
+.not-eligible-box {
+    background-color: #f8e6e6;
+    color: #965f5f;
+    padding: 9px 8px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.apply-green-btn {
+    background: linear-gradient(90deg, #66aa30, #008c50);
+    color: white;
+    padding: 10px 38px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.apply-green-btn:hover {
+    color: white;
+}
+
+.coverage-heading {
+    color: #14284f;
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.coverage-card {
+    display: flex;
+    align-items: center;
+    min-height: 74px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 12px 15px;
+    margin-bottom: 13px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.coverage-icon {
+    width: 37px;
+    height: 37px;
+    min-width: 37px;
+    border-radius: 50%;
+    background-color: #f4f8ef;
+    color: #91c878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+    font-size: 16px;
+}
+
+.coverage-card h5 {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 3px;
+    color: #222;
+}
+
+.coverage-card p {
+    font-size: 13px;
+    margin: 0;
+    color: #999;
+}
+
+.program-section {
+    padding: 55px 0;
+    background-color: #f6f6f6;
+}
+
+.program-card {
+    min-height: 70px;
+    background-color: white;
+    border-radius: 13px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.program-card span {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f0f7ed;
+    margin-right: 12px;
+}
+
+.program-card span img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.program-card p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 600;
+}
+
+.check-eligibility {
+    background-color: #087b3e;
+}
+
+.check-content {
+    min-height: 500px;
+    padding: 120px 12%;
+    background: linear-gradient(135deg, #66a934, #008344);
+    color: white;
+}
+
+.check-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.check-content > p {
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 300px;
+    margin-bottom: 25px;
+}
+
+.check-select {
+    max-width: 420px;
+    height: 40px;
+    margin-bottom: 12px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 13px;
+}
+
+.check-select option {
+    color: #222;
+}
+
+.submit-btn {
+    background-color: white;
+    color: #087b3e;
+    padding: 8px 30px;
+    font-size: 13px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #f3f3f3;
+    color: #087b3e;
+}
+
+.check-image {
+    height: 500px;
+}
+
+.check-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faq-section {
+    padding: 70px 0;
+    background-color: white;
+}
+
+.faq-image {
+    padding: 15px;
+}
+
+.faq-image img {
+    width: 100%;
+    height: 465px;
+    object-fit: cover;
+}
+
+.faq-accordion {
+    position: relative;
+    z-index: 2;
+    margin-left: -55px;
+    background-color: white;
+    padding: 35px;
+}
+
+.faq-accordion .accordion-item {
+    border: 1px solid #eeeeee;
+    margin-bottom: 10px;
+}
+
+.faq-accordion .accordion-button {
+    min-height: 50px;
+    padding: 8px 15px 8px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+    background-color: white;
+    box-shadow: none;
+}
+
+.faq-accordion .accordion-button::before {
+    content: "+";
+    width: 36px;
+    height: 40px;
+    min-width: 36px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.faq-accordion .accordion-button::after {
+    display: none;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #00a651;
+    box-shadow: none;
+}
+
+.faq-accordion .accordion-button:not(.collapsed)::before {
+    content: "−";
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    margin-left: 0;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-color: white;
+    color: #00a651;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.faq-accordion .accordion-body {
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #777;
+}
+
+
+.ranking-section {
+    padding: 65px 0 70px;
+    background-color: white;
+}
+
+.ranking-title {
+    text-align: center;
+    color: #14284f;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.student-card {
+    min-height: 245px;
+    padding: 18px 15px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.student-card > img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.student-card h3 {
+    font-size: 13px;
+    color: #14284f;
+    margin-bottom: 4px;
+}
+
+.university {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.field {
+    display: inline-block;
+    color: #1b87d2;
+    background-color: #eaf5fc;
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.field.pink {
+    color: #df6b7c;
+    background-color: #fcecef;
+}
+
+.field.yellow {
+    color: #d5ad00;
+    background-color: #fff8d9;
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #eeeeee;
+    padding-top: 10px;
+}
+
+.student-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.student-info small {
+    font-size: 13px;
+    color: #999;
+}
+
+.student-info strong {
+    font-size: 13px;
+    color: #333;
+}
+
+.see-all-btn {
+    margin-top: 25px;
+    background-color: #087b3e;
+    color: white;
+    padding: 8px 35px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.see-all-btn:hover {
+    background-color: #066b35;
+    color: white;
+}
+
+footer {
+    padding: 55px 0 20px;
+    background: linear-gradient(110deg, #63a735, #008044);
+    color: white;
+}
+
+.footer-brand img {
+    width: 155px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.footer-logos img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-column > a {
+    display: block;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 11px;
+}
+
+.footer-column > a::before {
+    content: "›";
+    margin-right: 8px;
+}
+
+.footer-column p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.social-icons {
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-bottom span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 991px) {
+
+  @media (max-width: 991px) {
+
+   
+
+    header {
+        min-height: 70px;
+        height: auto;
+    }
+
+    .navbar {
+        min-height: 70px;
+        padding: 10px 0;
+    }
+
+    .navbar .container {
+        min-height: auto;
+    }
+
+    .navbar-brand img {
+        width: 130px;
+    }
+
+    .navbar-toggler {
+        border: 1px solid #087b3e;
+        padding: 6px 8px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 15px 0;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .navbar-nav {
+        align-items: flex-start !important;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .login-btn {
+        display: inline-block;
+        margin-top: 8px;
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+
+    .hero {
+        height: 600px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .eligibility-section {
+        padding: 45px 15px;
+    }
+
+    .eligibility-left h2 {
+        font-size: 29px;
+    }
+
+    .small-title {
+        font-size: 13px;
+    }
+
+    .criteria-list li {
+        font-size: 13px;
+    }
+
+    .not-eligible-box {
+        font-size: 13px;
+    }
+
+    .coverage-heading {
+        margin-top: 15px;
+    }
+
+    .coverage-card h5 {
+        font-size: 13px;
+    }
+
+    .coverage-card p {
+        font-size: 13px;
+    }
+
+    .program-card p {
+        font-size: 13px;
+    }
+
+    .check-content {
+        min-height: 450px;
+        padding: 70px 30px;
+    }
+
+    .check-content > p {
+        font-size: 13px;
+    }
+
+    .check-select {
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        font-size: 13px;
+    }
+
+    .check-image {
+        height: 400px;
+    }
+
+  @media (max-width: 991px) {
+
+    .faq-section {
+        padding: 45px 15px;
+    }
+
+    .faq-image {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .faq-image img {
+        height: 300px;
+    }
+
+    .faq-accordion {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .faq-accordion .accordion-button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .faq-accordion .accordion-body {
+        font-size: 13px;
+    }
+}
+    .ranking-section {
+        padding: 45px 15px;
+    }
+
+    .student-card {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .university {
+        font-size: 13px;
+    }
+
+    .field {
+        font-size: 13px;
+    }
+
+    .student-info small {
+        font-size: 13px;
+    }
+
+    .student-info strong {
+        font-size: 13px;
+    }
+
+    .see-all-btn {
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 45px 25px 20px;
+    }
+
+    .footer-column {
+        margin-top: 30px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    .footer-column > a {
+        font-size: 13px;
+    }
+
+    .footer-column p {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        font-size: 13px;
+    }
+}
+}
